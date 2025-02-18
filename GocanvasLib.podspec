@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
     s.author           = { "eSub" => "email@example.com" }
     s.platforms        = { :ios => min_ios_version_supported }
     s.source           = { :git => "https://github.com/alexobi/gocanvas.git" }
-    s.preserve_paths      = 'GCSdk.xcframework'
+    # s.preserve_paths      = 'GCSdk.xcframework'
     s.vendored_frameworks = 'GCSdk.xcframework'
 end
