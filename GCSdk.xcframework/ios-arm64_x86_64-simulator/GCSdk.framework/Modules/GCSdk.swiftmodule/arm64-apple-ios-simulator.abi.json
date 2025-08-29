@@ -15,9 +15,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit.UIInterface",
+        "printedName": "UIKit.UIInterface",
+        "declKind": "Import",
+        "moduleName": "GCSdk"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "MessagingAction",
-        "printedName": "MessagingAction",
+        "name": "CanvasSdkMessagingAction",
+        "printedName": "CanvasSdkMessagingAction",
         "children": [
           {
             "kind": "Var",
@@ -32,8 +39,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5GCSdk15MessagingActionV11actionTitleSSvp",
-            "mangledName": "$s5GCSdk15MessagingActionV11actionTitleSSvp",
+            "usr": "s:5GCSdk24CanvasSdkMessagingActionV11actionTitleSSvp",
+            "mangledName": "$s5GCSdk24CanvasSdkMessagingActionV11actionTitleSSvp",
             "moduleName": "GCSdk",
             "declAttributes": [
               "HasStorage",
@@ -55,8 +62,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5GCSdk15MessagingActionV11actionTitleSSvg",
-                "mangledName": "$s5GCSdk15MessagingActionV11actionTitleSSvg",
+                "usr": "s:5GCSdk24CanvasSdkMessagingActionV11actionTitleSSvg",
+                "mangledName": "$s5GCSdk24CanvasSdkMessagingActionV11actionTitleSSvg",
                 "moduleName": "GCSdk",
                 "implicit": true,
                 "accessorKind": "get"
@@ -87,8 +94,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5GCSdk15MessagingActionV13actionHandleryycvp",
-            "mangledName": "$s5GCSdk15MessagingActionV13actionHandleryycvp",
+            "usr": "s:5GCSdk24CanvasSdkMessagingActionV13actionHandleryycvp",
+            "mangledName": "$s5GCSdk24CanvasSdkMessagingActionV13actionHandleryycvp",
             "moduleName": "GCSdk",
             "declAttributes": [
               "HasStorage",
@@ -121,8 +128,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5GCSdk15MessagingActionV13actionHandleryycvg",
-                "mangledName": "$s5GCSdk15MessagingActionV13actionHandleryycvg",
+                "usr": "s:5GCSdk24CanvasSdkMessagingActionV13actionHandleryycvg",
+                "mangledName": "$s5GCSdk24CanvasSdkMessagingActionV13actionHandleryycvg",
                 "moduleName": "GCSdk",
                 "implicit": true,
                 "accessorKind": "get"
@@ -131,8 +138,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:5GCSdk15MessagingActionV",
-        "mangledName": "$s5GCSdk15MessagingActionV",
+        "usr": "s:5GCSdk24CanvasSdkMessagingActionV",
+        "mangledName": "$s5GCSdk24CanvasSdkMessagingActionV",
         "moduleName": "GCSdk",
         "declAttributes": [
           "AccessControl"
@@ -156,13 +163,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MessagingDelegate",
-        "printedName": "MessagingDelegate",
+        "name": "CanvasSdkMessagingDelegate",
+        "printedName": "CanvasSdkMessagingDelegate",
         "children": [
           {
             "kind": "Function",
             "name": "showResumeMessage",
-            "printedName": "showResumeMessage(withTitle:body:discardAction:continueAction:)",
+            "printedName": "showResumeMessage(withTitle:body:discardAction:continueAction:userInterfaceStyle:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -183,31 +190,37 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "MessagingAction",
-                "printedName": "GCSdk.MessagingAction",
-                "usr": "s:5GCSdk15MessagingActionV"
+                "name": "CanvasSdkMessagingAction",
+                "printedName": "GCSdk.CanvasSdkMessagingAction",
+                "usr": "s:5GCSdk24CanvasSdkMessagingActionV"
               },
               {
                 "kind": "TypeNominal",
-                "name": "MessagingAction",
-                "printedName": "GCSdk.MessagingAction",
-                "usr": "s:5GCSdk15MessagingActionV"
+                "name": "CanvasSdkMessagingAction",
+                "printedName": "GCSdk.CanvasSdkMessagingAction",
+                "usr": "s:5GCSdk24CanvasSdkMessagingActionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIUserInterfaceStyle",
+                "printedName": "UIKit.UIUserInterfaceStyle",
+                "usr": "c:@E@UIUserInterfaceStyle"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5GCSdk17MessagingDelegateP17showResumeMessage9withTitle4body13discardAction08continueK0ySS_SSAA0bK0VAJtF",
-            "mangledName": "$s5GCSdk17MessagingDelegateP17showResumeMessage9withTitle4body13discardAction08continueK0ySS_SSAA0bK0VAJtF",
+            "usr": "s:5GCSdk26CanvasSdkMessagingDelegateP17showResumeMessage9withTitle4body13discardAction08continueM018userInterfaceStyleySS_SSAA0bcdM0VAKSo06UIUserpQ0VtF",
+            "mangledName": "$s5GCSdk26CanvasSdkMessagingDelegateP17showResumeMessage9withTitle4body13discardAction08continueM018userInterfaceStyleySS_SSAA0bcdM0VAKSo06UIUserpQ0VtF",
             "moduleName": "GCSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.MessagingDelegate>",
-            "sugared_genericSig": "<Self where Self : GCSdk.MessagingDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkMessagingDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkMessagingDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:5GCSdk17MessagingDelegateP",
-        "mangledName": "$s5GCSdk17MessagingDelegateP",
+        "usr": "s:5GCSdk26CanvasSdkMessagingDelegateP",
+        "mangledName": "$s5GCSdk26CanvasSdkMessagingDelegateP",
         "moduleName": "GCSdk",
         "declAttributes": [
           "AccessControl"
@@ -258,6 +271,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIInterface",
+        "printedName": "UIKit.UIInterface",
+        "declKind": "Import",
+        "moduleName": "GCSdk"
       },
       {
         "kind": "TypeDecl",
@@ -325,6 +345,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIInterface",
+        "printedName": "UIKit.UIInterface",
+        "declKind": "Import",
+        "moduleName": "GCSdk"
       },
       {
         "kind": "Import",
@@ -436,9 +463,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "MessagingDelegate",
-                "printedName": "any GCSdk.MessagingDelegate",
-                "usr": "s:5GCSdk17MessagingDelegateP"
+                "name": "CanvasSdkMessagingDelegate",
+                "printedName": "any GCSdk.CanvasSdkMessagingDelegate",
+                "usr": "s:5GCSdk26CanvasSdkMessagingDelegateP"
               },
               {
                 "kind": "TypeFunc",
@@ -460,8 +487,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5GCSdk20GoCanvasFormLauncherC18formFlowController6config17messagingDelegate10completionSo06UIViewH0CAA0aD6ConfigV_AA09MessagingK0_pySSctYaKF",
-            "mangledName": "$s5GCSdk20GoCanvasFormLauncherC18formFlowController6config17messagingDelegate10completionSo06UIViewH0CAA0aD6ConfigV_AA09MessagingK0_pySSctYaKF",
+            "usr": "s:5GCSdk20GoCanvasFormLauncherC18formFlowController6config17messagingDelegate10completionSo06UIViewH0CAA0aD6ConfigV_AA0c12SdkMessagingK0_pySSctYaKF",
+            "mangledName": "$s5GCSdk20GoCanvasFormLauncherC18formFlowController6config17messagingDelegate10completionSo06UIViewH0CAA0aD6ConfigV_AA0c12SdkMessagingK0_pySSctYaKF",
             "moduleName": "GCSdk",
             "declAttributes": [
               "AccessControl",
@@ -493,6 +520,26 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GCSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GCInternalSdk",
+        "printedName": "GCInternalSdk",
+        "declKind": "Import",
+        "moduleName": "GCSdk",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -1348,6 +1395,441 @@
         "declKind": "Struct",
         "usr": "s:5GCSdk0A10FormConfigV",
         "mangledName": "$s5GCSdk0A10FormConfigV",
+        "moduleName": "GCSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GCSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CanvasSdkFirebaseDelegate",
+        "printedName": "CanvasSdkFirebaseDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sdkRecordError",
+            "printedName": "sdkRecordError(_:message:function:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP14sdkRecordError_7message8functionySS_S2StF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP14sdkRecordError_7message8functionySS_S2StF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkSetVariables",
+            "printedName": "sdkSetVariables(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP15sdkSetVariablesyySDyS2SGF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP15sdkSetVariablesyySDyS2SGF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkLogEvent",
+            "printedName": "sdkLogEvent(_:parameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP11sdkLogEvent_10parametersySS_SDySSypGtF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP11sdkLogEvent_10parametersySS_SDySSypGtF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkLogSignUp",
+            "printedName": "sdkLogSignUp(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP12sdkLogSignUp4withySDySSypGSg_tF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP12sdkLogSignUp4withySDySSypGSg_tF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkInitializeRemoteConfig",
+            "printedName": "sdkInitializeRemoteConfig()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP25sdkInitializeRemoteConfigyyF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP25sdkInitializeRemoteConfigyyF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkSetUserProperties",
+            "printedName": "sdkSetUserProperties()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP20sdkSetUserPropertiesyyF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP20sdkSetUserPropertiesyyF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkRemoteConfigStringValue",
+            "printedName": "sdkRemoteConfigStringValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP26sdkRemoteConfigStringValue6forKeySSSgSS_tF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP26sdkRemoteConfigStringValue6forKeySSSgSS_tF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkRemoteConfigBoolValue",
+            "printedName": "sdkRemoteConfigBoolValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP24sdkRemoteConfigBoolValue6forKeySbSS_tF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP24sdkRemoteConfigBoolValue6forKeySbSS_tF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkGetToken",
+            "printedName": "sdkGetToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP11sdkGetTokenSSSgyF",
+            "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP11sdkGetTokenSSSgyF",
+            "moduleName": "GCSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : GCSdk.CanvasSdkFirebaseDelegate>",
+            "sugared_genericSig": "<Self where Self : GCSdk.CanvasSdkFirebaseDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP",
+        "mangledName": "$s5GCSdk25CanvasSdkFirebaseDelegateP",
+        "moduleName": "GCSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GoCanvasFirebase",
+        "printedName": "GoCanvasFirebase",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GoCanvasFirebase",
+                "printedName": "GCSdk.GoCanvasFirebase",
+                "usr": "s:5GCSdk16GoCanvasFirebaseC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5GCSdk16GoCanvasFirebaseCACycfc",
+            "mangledName": "$s5GCSdk16GoCanvasFirebaseCACycfc",
+            "moduleName": "GCSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any GCSdk.CanvasSdkFirebaseDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CanvasSdkFirebaseDelegate",
+                    "printedName": "any GCSdk.CanvasSdkFirebaseDelegate",
+                    "usr": "s:5GCSdk25CanvasSdkFirebaseDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5GCSdk16GoCanvasFirebaseC11setDelegateyyAA0c3SdkdF0_pSgF",
+            "mangledName": "$s5GCSdk16GoCanvasFirebaseC11setDelegateyyAA0c3SdkdF0_pSgF",
+            "moduleName": "GCSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5GCSdk16GoCanvasFirebaseC",
+        "mangledName": "$s5GCSdk16GoCanvasFirebaseC",
         "moduleName": "GCSdk",
         "declAttributes": [
           "AccessControl"

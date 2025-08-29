@@ -3,16 +3,17 @@
 // swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GCSdk
 import Foundation
 import Swift
+import UIKit.UIInterface
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct MessagingAction {
+public struct CanvasSdkMessagingAction {
   public let actionTitle: Swift.String
   public let actionHandler: () -> Swift.Void
 }
-public protocol MessagingDelegate {
-  func showResumeMessage(withTitle: Swift.String, body: Swift.String, discardAction: GCSdk.MessagingAction, continueAction: GCSdk.MessagingAction)
+public protocol CanvasSdkMessagingDelegate {
+  func showResumeMessage(withTitle: Swift.String, body: Swift.String, discardAction: GCSdk.CanvasSdkMessagingAction, continueAction: GCSdk.CanvasSdkMessagingAction, userInterfaceStyle: UIKit.UIUserInterfaceStyle)
 }
 public struct GCSdkConfig {
   public init(licenseKey: Swift.String)
@@ -20,7 +21,7 @@ public struct GCSdkConfig {
 public class GoCanvasFormLauncher {
   public init(config: GCSdk.GCSdkConfig)
   public func addConfigValue(key: Swift.String, value: Any)
-  @_Concurrency.MainActor public func formFlowController(config: GCSdk.GCSdkFormConfig, messagingDelegate: any GCSdk.MessagingDelegate, completion: @escaping (Swift.String) -> ()) async throws -> UIKit.UIViewController
+  @_Concurrency.MainActor public func formFlowController(config: GCSdk.GCSdkFormConfig, messagingDelegate: any GCSdk.CanvasSdkMessagingDelegate, completion: @escaping (Swift.String) -> ()) async throws -> UIKit.UIViewController
   @objc deinit
 }
 public enum SDKLicenseError : Swift.Error {
@@ -45,4 +46,20 @@ public enum FormLauncherError : Swift.Error {
 }
 public struct GCSdkFormConfig {
   public init(jsonInput: Swift.String, referenceDataJson: Swift.String? = nil, prefilledDataJson: Swift.String? = nil)
+}
+public protocol CanvasSdkFirebaseDelegate {
+  func sdkRecordError(_ title: Swift.String, message: Swift.String, function: Swift.String)
+  func sdkSetVariables(_ variables: [Swift.String : Swift.String])
+  func sdkLogEvent(_ eventName: Swift.String, parameters: [Swift.String : Any])
+  func sdkLogSignUp(with parameters: [Swift.String : Any]?)
+  func sdkInitializeRemoteConfig()
+  func sdkSetUserProperties()
+  func sdkRemoteConfigStringValue(forKey: Swift.String) -> Swift.String?
+  func sdkRemoteConfigBoolValue(forKey: Swift.String) -> Swift.Bool
+  func sdkGetToken() -> Swift.String?
+}
+public class GoCanvasFirebase {
+  public init()
+  public func setDelegate(_ delegate: (any GCSdk.CanvasSdkFirebaseDelegate)?)
+  @objc deinit
 }
