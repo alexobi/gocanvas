@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "GocanvasLib"
-    s.version          = "1.0.5"
+    s.version          = "1.0.6"
     s.summary          = "Gocanvas xcframework pod"
     s.homepage         = "https://github.com/alexobi/gocanvas"
     s.license          = { :type => "MIT", :file => "LICENSE" }
